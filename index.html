@@ -1558,34 +1558,13 @@
                       <div class="sqs-block-content">
 
                         <div class="sqs-html-content">
-                          <h3 style="white-space:pre-wrap;">
-                            <strong>{</strong><span class="sqsrte-text-color--darkAccent"><strong>shortsum</strong></span><strong>} is your personal assistant for capturing, organizing, and turning saved content into actionable insights.</strong>
-                          </h3>
+                          <h3 style="white-space:pre-wrap;"><strong>{</strong><span class="sqsrte-text-color--darkAccent"><strong>shortsum</strong></span><strong>} <span class="sqsrte-text-color--darkAccent">is your personal assistant for capturing, organizing, and turning saved content into actionable insights.</span></strong></h3>
+                          <h3 style="white-space:pre-wrap;"><span><strong>Our mission: </strong></span><span class="sqsrte-text-color--darkAccent"><strong>To empower you to make the most of what you save.</strong></span><span class="sqsrte-text-color--white"> With AI-powered summaries and smart organization,</span> <span><strong>{<span class="sqsrte-text-color--darkAccent">shortsum</span>}</strong></span>  <span class="sqsrte-text-color--white">transforms scattered saved content into a personal knowledge base you can rely on.</span></h3>
                           
-                          <h3 style="white-space:pre-wrap;">
-                            <span class="sqsrte-text-color--white">In today’s fast-paced world of short-form content, we save so much but revisit so little. Shortsum helps you get more from what you save by capturing key ideas, summarizing them, and organizing everything for easy access—so you never lose what truly matters.</span>
-                          </h3>
+
+                        <h3 id="how-it-works" style="white-space:pre-wrap;"><span class=""><strong>How <span><strong>{<span class="sqsrte-text-color--darkAccent">shortsum</span>}</strong></span> works ?</strong></span><ul class="" style="list-style:none; margin-left: 0px;"><li><strong><span class="sqsrte-text-color--darkAccent">Save</span> : </strong><span class="sqsrte-text-color--white">Share your favorite short-form videos directly to </span><span><strong>{<span class="sqsrte-text-color--darkAccent">shortsum</span>}</strong></span><span class="sqsrte-text-color--white"> with one tap, find it when you hit the share button</span>  </li>  <li><strong><span class="sqsrte-text-color--darkAccent">Summarize</span> : </strong><span class="sqsrte-text-color--white">Let </span><span><strong>{<span class="sqsrte-text-color--darkAccent">shortsum</span>}</strong></span><span class="sqsrte-text-color--white"> create concise, AI-powered summaries of key ideas</span></li>  <li><strong><span class="sqsrte-text-color--darkAccent">Organize</span> : </strong><span class="sqsrte-text-color--white">Automatically sort your saved content by title,themes, and tags; making it easy to find and revisit</span></li></ul></h3>
                           
-                          <h3 style="white-space:pre-wrap;">
-                            <span class="sqsrte-text-color--white">Our mission is simple: </span><span class="sqsrte-text-color--darkAccent"><strong>To empower you to make the most of what you save</strong></span><span class="sqsrte-text-color--white"><strong>.</strong> With AI-powered summaries and smart organization, Shortsum transforms scattered saved content into a personal knowledge base you can rely on.</span>
-                          </h3>
-                          
-                          <h3 style="white-space:pre-wrap;">
-                            <span class="sqsrte-text-color--white">How it works:</span>
-                            <ul class="sqsrte-text-color--white" style="list-style:disc; margin-left: 20px;">
-                              <li>Save: Share your favorite short-form videos directly to Shortsum with one tap.</li>
-                              <li>Summarize: Let Shortsum create concise, AI-powered summaries of key ideas.</li>
-                              <li>Organize: Automatically sort your saved content by themes, making it easy to find and revisit.</li>
-                            </ul>
-                          </h3>
-                          
-                          <h3 style="white-space:pre-wrap;">
-                            <span class="sqsrte-text-color--white">Our vision:</span> <span class="sqsrte-text-color--darkAccent"><strong>To help you turn saved content into meaningful knowledge, simplifying how you capture and retain insights in a world filled with endless distractions.</strong></span>
-                          </h3>
-                          
-                          <h3 style="white-space:pre-wrap;">
-                            <strong>Join us on this journey to make your saved content meaningful, manageable, and inspiring.</strong>
-                          </h3>
+                          <h3 style="white-space:pre-wrap;"><strong>Join us on this journey to make your saved content meaningful, manageable, and inspiring. Sign Up below!</strong></h3>
                         </div>
 
 
@@ -2102,7 +2081,7 @@
  
 
 
-                        <div class="form-wrapper">
+                        <div id="sign-up" class="form-wrapper">
                           <form action="https://script.google.com/macros/s/AKfycbzh1Ige9PRRJoMD1nJYQoWBXPixDxO2Y0CO3BLEZG5viK9DfnHi1Hr_oxPh5G_vHY6y/exec"
                             method="POST" autocomplete="on" class="react-form-contents" novalidate="novalidate">
                             <div class="field-list">
@@ -2804,6 +2783,28 @@
         });
     }
   </script>
+  <script>
+    // Helper function to scroll to a section based on its ID
+    const scrollToSection = (pathToIdMap) => {
+      const sectionId = pathToIdMap[window.location.pathname];
+      if (sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+  
+    // Map paths to section IDs
+    const pathToIdMap = {
+      "/how-it-works": "how-it-works",
+      "/sign-up": "sign-up"
+    };
+  
+    // Execute on page load
+    window.addEventListener("load", () => scrollToSection(pathToIdMap));
+  </script>
+  
 </body>
 
 </html>
