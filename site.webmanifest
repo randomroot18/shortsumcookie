@@ -19,13 +19,13 @@
   "start_url": "/",
   "scope": "/",
   "share_target": {
-    "action": "/share",
+    "action": "/submit",  // Changed endpoint to "/submit"
     "method": "POST",
-    "enctype": "multipart/form-data",
+    "enctype": "application/x-www-form-urlencoded", // Changed to a simpler format
     "params": {
-      "title": "name",
-      "text": "content",
-      "url": "link"
+      "title": "title",     // Key for shared title
+      "text": "text",       // Key for shared text
+      "url": "url"          // Key for shared link
     }
   }
 }
