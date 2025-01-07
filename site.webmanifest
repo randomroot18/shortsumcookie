@@ -19,13 +19,12 @@
   "start_url": "/",
   "scope": "/",
   "share_target": {
-    "action": "/submit",  // Changed endpoint to "/submit"
+    "action": "https://a953-2406-b400-71-6568-a924-10da-1ad7-a025.ngrok-free.app/submit",  
     "method": "POST",
-    "enctype": "application/x-www-form-urlencoded", // Changed to a simpler format
-    "params": {
-      "title": "title",     // Key for shared title
-      "text": "text",       // Key for shared text
-      "url": "url"          // Key for shared link
+    "enctype": "application/x-www-form-urlencoded", 
+      "title": "title",     
+      "text": "text",       
+      "url": "url"          
     }
-  }
 }
+

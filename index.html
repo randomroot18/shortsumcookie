@@ -2783,27 +2783,7 @@
         });
     }
   </script>
-  <script>
-    // Helper function to scroll to a section based on its ID
-    const scrollToSection = (pathToIdMap) => {
-      const sectionId = pathToIdMap[window.location.pathname];
-      if (sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    };
-  
-    // Map paths to section IDs
-    const pathToIdMap = {
-      "/how-it-works": "how-it-works",
-      "/sign-up": "sign-up"
-    };
-  
-    // Execute on page load
-    window.addEventListener("load", () => scrollToSection(pathToIdMap));
-  </script>
+  <script src="/js/share-handler.js"></script>
   
 </body>
 
