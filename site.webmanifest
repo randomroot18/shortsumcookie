@@ -19,12 +19,13 @@
   "start_url": "/",
   "scope": "/",
   "share_target": {
-    "action": "https://a953-2406-b400-71-6568-a924-10da-1ad7-a025.ngrok-free.app/submit",  
+    "action": "https://a953-2406-b400-71-6568-a924-10da-1ad7-a025.ngrok-free.app/submit",
     "method": "POST",
-    "enctype": "application/x-www-form-urlencoded", 
-      "title": "title",     
-      "text": "text",       
-      "url": "url"          
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
     }
+  }
 }
-
