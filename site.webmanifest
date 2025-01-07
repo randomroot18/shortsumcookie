@@ -17,7 +17,7 @@
   "background_color": "#f26625",
   "display": "standalone",
   "start_url": "/",
-  "scope": "/",
+  "scope": "https://a953-2406-b400-71-6568-a924-10da-1ad7-a025.ngrok-free.app/",
   "share_target": {
     "action": "https://a953-2406-b400-71-6568-a924-10da-1ad7-a025.ngrok-free.app/submit",
     "method": "POST",
